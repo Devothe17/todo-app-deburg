@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 export default function TodoForm({ onAdd }) {
@@ -16,7 +17,7 @@ export default function TodoForm({ onAdd }) {
           type="text"
           name="task"
           value={text}
-          onChange={(event) => setText(event.target)}
+          onChange={(event) => setText(event.target.value)}
           placeholder="Add a task"
           autoComplete="off"
         />
